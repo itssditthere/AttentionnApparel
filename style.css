@@ -1,0 +1,113 @@
+/* Reset dasar */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  color: #333;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Animasi muncul saat halaman dimuat */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Header */
+header {
+  background-color: #4a4a4a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* Efek hover pada header */
+header:hover {
+  background-color: #3a3a3a;
+}
+
+/* Kontainer utama */
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Logo */
+.logo {
+  margin-bottom: 20px;
+  animation: floating 3s infinite ease-in-out;
+}
+
+/* Efek animasi melayang pada logo */
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.logo img {
+  width: 150px;
+}
+
+/* Tentang Kami */
+.about {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Efek hover pada bagian Tentang Kami */
+.about:hover {
+  transform: scale(1.05);
+}
+
+/* Galeri */
+.gallery {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Efek hover pada foto brand */
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #4a4a4a;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
